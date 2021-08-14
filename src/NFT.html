@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/dist/main.css" media="screen" />
+    <script src="./js/NFT.js" type="module"></script>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/MemeABI.js"></script>
+
+    
+    <title>KEKW</title>
+</head>
+
+<body id="body">
+    <nav id="header">
+        <a href="./index.html">
+            <object type="image/svg+xml" data="./assets/ff.svg" class="logo">
+            </object>
+        </a>
+        <ul>
+            <li id="acc"></li>
+            <li> <a href="./market.html">Market</a></li>
+            <li> <a href="./portfolio.html">My Assets</a></li>
+            <li> <a href="./NFT.html">Create NFT</a></li>
+
+            <li><button type="button" class="" id="web3connect">wallet</button></li>
+        </ul>
+    </nav>
+
+    <div id="make">
+        
+
+        <div class="nes-field">
+        <label style="font-size: 20px;" for="name_field">NFT Name</label>
+        <input type="text" id="name_field" class="nes-input">
+        </div>
+
+        <div class="nes-field">
+        <label style="font-size: 20px;" for="textarea_field">Description</label>
+        <textarea id="textarea_field" class="nes-textarea"></textarea>
+        </div>
+
+        <h2>Input your NFT</h2>
+        <label class="nes-btn">
+        <span >Select your file</span>
+        <input type="file" id="nft-file-input">
+        </label>
+
+        <button type="button" class="nes-btn" id="Submit">Submit</button>
+
+    </div>
+
+
+
+    <footer id="end">Made with &#129293 by 3scava1i3r</footer>
+    <!--  adding scripts for outside web3.js work -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js"
+    integrity="sha384-5bXRcW9kyxxnSMbOoHzraqa7Z0PQWIao+cgeg327zit1hz5LZCEbIMx/LWKPReuB"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+<!-- 
+ganache-cli --fork https://matic.getblock.io/mainnet/?api_key=53adeee6-ff92-47ad-b330-c8e76391730d
+-->
